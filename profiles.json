@@ -5,26 +5,47 @@
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
 
-    "defaultProfile": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+    "defaultProfile": "{00000000-0000-0000-ba54-000000000001}",
 
     "profiles":
     [
+        {
+            // Git Bash
+            "acrylicOpacity" : 0.66,
+            "backgroundImage" : "https://raw.githubusercontent.com/pooley/windows-terminal-settings/master/wp/wp-git.jpg",
+            "backgroundImageOpacity" : 0.5,
+            "closeOnExit" : true,
+            "colorScheme" : "Pooley",
+            "commandline" : "\"%PROGRAMFILES%\\Git\\bin\\bash.exe",
+            "cursorColor" : "#FFF",
+            "cursorShape" : "filledBox", // bar, vintage, filledBox, emptyBox, box
+            "fontFace" : "Cascadia Code PL", // "Cascadia Mono", "Ubuntu Mono", "IBM Plex Mono"
+            "fontSize" : 10,
+            "guid" : "{00000000-0000-0000-ba54-000000000001}",
+            "historySize" : 9001,
+            "icon" : "https://raw.githubusercontent.com/pooley/windows-terminal-settings/master/ico/git-light.png",
+            "name" : "Git Bash",
+            "padding" : "20,20,20,20",
+            "snapOnInput" : true,
+            "startingDirectory" : "C:/Users/logan/projets",
+            "useAcrylic" : true,
+            "experimental.retroTerminalEffect": 0
+        },
         {
             // Github
 			"acrylicOpacity" : 0.5,
             "backgroundImage" : "https://raw.githubusercontent.com/pooley/windows-terminal-settings/master/wp/wp-github.jpg",
             "backgroundImageOpacity" : 0.33,
-			"foreground" : "#FFF",
             "closeOnExit" : true,            
             "colorScheme" : "Pooley",
             "commandline" : "cmd.exe",
             "cursorColor" : "#FFF",
-            "cursorShape" : "filledBox", // bar, vintage, filledBox, emptyBox, box
-            "fontFace" : "IBM Plex Mono", // "Cascadia Mono", "Ubuntu Mono", "IBM Plex Mono"
+            "cursorShape" : "filledBox",
+            "fontFace" : "IBM Plex Mono",
             "fontSize" : 9,
             "guid" : "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
             "historySize" : 9001,
-            "icon" : "https://raw.githubusercontent.com/pooley/windows-terminal-settings/master/ico/GitHub-Light.png",
+            "icon" : "https://raw.githubusercontent.com/pooley/windows-terminal-settings/master/ico/github-light.png",
             "name" : "Github",
             "padding" : "20,20,20,20",
             "snapOnInput" : true,
@@ -69,20 +90,15 @@
             "fontSize" : 9,
             "guid" : "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
             "historySize" : 9001,
-            "icon" : "https://raw.githubusercontent.com/pooley/windows-terminal-settings/master/ico/PowerShell-Blue.png",
-            "name" : "Windows PS",
+            "icon" : "https://raw.githubusercontent.com/pooley/windows-terminal-settings/master/ico/posh-blue.png",
+            "name" : "PowerShell",
             "padding" : "20,20,20,20",
             "snapOnInput" : true,
             "startingDirectory" : "%USERPROFILE%",
             "useAcrylic" : true,
 			"experimental.retroTerminalEffect": 1
-        },
-        {
-            "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-            "hidden": false,
-            "name": "Azure Cloud Shell",
-            "source": "Windows.Terminal.Azure"
         }
+//        ,
 //        {
 //            "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
 //            "hidden": false,
@@ -94,7 +110,7 @@
     "globals" :
     {
         "alwaysShowTabs" : true,
-        "defaultProfile" : "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+//        "defaultProfile" : "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
         "initialCols" : 120,
         "initialRows" : 30,
         "keybindings" :

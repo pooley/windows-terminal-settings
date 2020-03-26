@@ -13,7 +13,7 @@
             "padding": "20,20,20,20",
             "snapOnInput": true,
             "useAcrylic": true,
-            "experimental.retroTerminalEffect": 1
+            "experimental.retroTerminalEffect": 0
         },
         "list": [
             {

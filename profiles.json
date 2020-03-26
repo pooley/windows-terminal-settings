@@ -61,7 +61,7 @@
     },
     "globals": {
         "alwaysShowTabs": true,
-        "defaultProfile": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+        "defaultProfile": "{00000000-0000-0000-ba54-000000000001}",
         "initialCols": 120,
         "initialRows": 30,
         "keybindings":

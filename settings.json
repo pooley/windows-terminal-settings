@@ -1,5 +1,6 @@
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
+    "defaultProfile": "{00000000-0000-0000-ba54-000000000001}",
     "profiles": {
         "defaults": {
             "acrylicOpacity": 0.5,
@@ -59,53 +60,149 @@
             }
         ]
     },
-    "globals": {
-        "alwaysShowTabs": true,
-        "defaultProfile": "{00000000-0000-0000-ba54-000000000001}",
-        "initialCols": 120,
-        "initialRows": 30,
-        "keybindings":
-        [
-            {"command": "closePane", "keys": "ctrl+shift+w"},
-            {"command": "copy", "keys": "ctrl+shift+c"},
-            {"command": "duplicateTab", "keys": "ctrl+shift+d"},
-            {"command": "newTab", "keys": "ctrl+shift+t"},
-            {"command": "newTabProfile0", "keys": "ctrl+shift+1"},
-            {"command": "newTabProfile1", "keys": "ctrl+shift+2"},
-            {"command": "newTabProfile2", "keys": "ctrl+shift+3"},
-            {"command": "newTabProfile3", "keys": "ctrl+shift+4"},
-            {"command": "newTabProfile4", "keys": "ctrl+shift+5"},
-            {"command": "newTabProfile5", "keys": "ctrl+shift+6"},
-            {"command": "newTabProfile6", "keys": "ctrl+shift+7"},
-            {"command": "newTabProfile7", "keys": "ctrl+shift+8"},
-            {"command": "newTabProfile8", "keys": "ctrl+shift+9"},
-            {"command": "nextTab", "keys": "ctrl+tab"},
-            {"command": "openSettings", "keys": "ctrl+,"},
-            {"command": "paste", "keys": "ctrl+shift+v"},
-            {"command": "prevTab", "keys": "ctrl+shift+tab"},
-            {"command": "scrollDownPage", "keys": "ctrl+shift+pgdn"},
-            {"command": "scrollUp", "keys": "ctrl+shift+up"},
-            {"command": "scrollUpPage", "keys": "ctrl+shift+pgup"},
-            {"command": "splitHorizontal", "keys": "ctrl+shift+down"},
-            {"command": "splitVertical", "keys": "ctrl+shift+right"},
-            {"command": "switchToTab0", "keys": "ctrl+alt+1"},
-            {"command": "switchToTab1", "keys": "ctrl+alt+2"},
-            {"command": "switchToTab2", "keys": "ctrl+alt+3"},
-            {"command": "switchToTab3", "keys": "ctrl+alt+4"},
-            {"command": "switchToTab4", "keys": "ctrl+alt+5"},
-            {"command": "switchToTab5", "keys": "ctrl+alt+6"},
-            {"command": "switchToTab6", "keys": "ctrl+alt+7"},
-            {"command": "switchToTab7", "keys": "ctrl+alt+8"},
-            {"command": "switchToTab8", "keys": "ctrl+alt+9"}
-        ],
-        "requestedTheme": "system",
-        "showTabsInTitlebar": true,
-        "showTerminalTitleInTitlebar": true,
-        "wordDelimiters": " ./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}~?\u2502"
-    },
+    "alwaysShowTabs": true,
+    "initialCols": 120,
+    "initialRows": 30,
+    "keybindings": [
+        {
+            "command": "closePane",
+            "keys": "ctrl+shift+w"
+        },
+        {
+            "command": "copy",
+            "keys": "ctrl+shift+c"
+        },
+        {
+            "command": "duplicateTab",
+            "keys": "ctrl+shift+d"
+        },
+        {
+            "command": "newTab",
+            "keys": "ctrl+shift+t"
+        },
+        {
+            "command": { "action": "newTab", "index": 0 },
+            "keys": "ctrl+shift+1"
+        },
+        {
+            "command": { "action": "newTab", "index": 1 },
+            "keys": "ctrl+shift+2"
+        },
+        {
+            "command": { "action": "newTab", "index": 2 },
+            "keys": "ctrl+shift+3"
+        },
+        {
+            "command": { "action": "newTab", "index": 3 },
+            "keys": "ctrl+shift+4"
+        },
+        {
+            "command": { "action": "newTab", "index": 4 },
+            "keys": "ctrl+shift+5"
+        },
+        {
+            "command": "nextTab",
+            "keys": "ctrl+tab"
+        },
+        {
+            "command": "openSettings",
+            "keys": "ctrl+,"
+        },
+        {
+            "command": "paste",
+            "keys": "ctrl+shift+v"
+        },
+        {
+            "command": "prevTab",
+            "keys": "ctrl+shift+tab"
+        },
+        {
+            "command": "scrollDownPage",
+            "keys": "ctrl+shift+pgdn"
+        },
+        {
+            "command": "scrollUp",
+            "keys": "ctrl+shift+up"
+        },
+        {
+            "command": "scrollUpPage",
+            "keys": "ctrl+shift+pgup"
+        },
+        {
+            "command": {
+                "action": "splitPane",
+                "split": "horizontal"
+            },
+            "keys": "ctrl+shift+down"
+        },
+        {
+            "command": {
+                "action": "splitPane",
+                "split": "vertical"
+            },
+            "keys": "ctrl+shift+right"
+        },
+        {
+            "command": {
+                "action": "splitPane",
+                "split": "horizontal",
+                "splitMode": "duplicate"
+            },
+            "keys": "ctrl+alt+shift+down"
+        },
+        {
+            "command": {
+                "action": "splitPane",
+                "split": "vertical",
+                "splitMode": "duplicate"
+            },
+            "keys": "ctrl+alt+shift+right"
+        },
+        {
+            "command": "switchToTab0",
+            "keys": "ctrl+alt+1"
+        },
+        {
+            "command": "switchToTab1",
+            "keys": "ctrl+alt+2"
+        },
+        {
+            "command": "switchToTab2",
+            "keys": "ctrl+alt+3"
+        },
+        {
+            "command": "switchToTab3",
+            "keys": "ctrl+alt+4"
+        },
+        {
+            "command": "switchToTab4",
+            "keys": "ctrl+alt+5"
+        },
+        {
+            "command": "switchToTab5",
+            "keys": "ctrl+alt+6"
+        },
+        {
+            "command": "switchToTab6",
+            "keys": "ctrl+alt+7"
+        },
+        {
+            "command": "switchToTab7",
+            "keys": "ctrl+alt+8"
+        },
+        {
+            "command": "switchToTab8",
+            "keys": "ctrl+alt+9"
+        }
+    ],
+    "requestedTheme": "system",
+    "showTabsInTitlebar": true,
+    "showTerminalTitleInTitlebar": true,
+    "wordDelimiters": " ./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}~?\u2502",
     "schemes": [
         {
             "name": "Pooley",
+            "cursorColor": "#fff",
             "foreground": "#fff",
             "background": "#282828",
             "black": "#161616",

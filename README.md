@@ -4,7 +4,7 @@ Just wanted to share my assets and **profiles.json** from my [Windows Terminal](
 - some icons,  
 - background wallpapers _(psd template provided)_,  
 - animated background wallpapers _(gif)_,  
-- my profiles.json (_Thanks [@darkanakin41](https://github.com/darkanakin41)_).  
+- my settings.json (_Thanks [@darkanakin41](https://github.com/darkanakin41)_).  
 
 Font can be found on that [Nerd Font website](https://www.nerdfonts.com/). 
 
